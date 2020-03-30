@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <link rel = "icon" href =  
+    "https://img.favpng.com/5/10/9/css-icon-html-icon-html5-icon-png-favpng-F085sKM3CjHVXmHKJhEBwjxY4.jpg" 
+            type = "image/x-icon"> 
+            <title>blank 0.0.1</title>
+            <style>
+    body {
+        background-color: gray;
+        background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/04/Solid-Black-Website-Background.jpg);
+    }
+</style>
+</head>
+<body>
+<style>
+ p {
+     font-family: Verdana;
+     font-size: 20px;
+     color: white;
+ }   
+</style>
+<p>Log in</p>
+
+<script> //def temp username
+    var username1
+    var username1 = "kayleeroselipp"
+    var password1
+    var password1 = "wolves20"
+</script>
+<style>
+    .usernameclass {
+        padding: 15px 32px;
+        font-size: 15px;
+    }
+    .passwordclass {
+        padding: 15px 32px;
+        font-size: 15px;
+
+    }
+    .loginclass {
+        padding: 15px 32px;
+        font-size: 15px;
+
+    }
+</style>
+
+
+<!--logging username and password, loggin button-->
+<input class="usernameclass" type="text" id="username" placeholder="username" value="">
+<input class="passwordclass" type="password" id="password" placeholder="password" value="">
+<button class="loginclass" onclick="login()">Log in</button>
+
+
+
+
+<script>//whrn button loggin is clicked does check
+function login() {
+        var username2 = document.getElementById("username").value;
+        var password2 = document.getElementById("password").value;
+
+        if (username2 == username1 && password2 == password1) {
+            document.getElementById("p1").innerHTML = "true";
+            window.location.href = "http://example.com/new_url";
+        } else {
+            document.getElementById("p1").innerHTML = "false";
+
+        }
+        // && password == password1
+        //username2 == username1 && 
+    }
+</script>
+<p id="p1"></p>
+</body>
